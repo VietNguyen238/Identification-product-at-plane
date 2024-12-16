@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product sorting at the airport</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0 0 0;
+      }
+
+      h1 {
+        font-size: 40px;
+        line-height: 0;
+      }
+
+      p {
+        font-size: 25px;
+        width: 90%;
+        text-align: center;
+      }
+
+      .grid {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 4%;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #252525;
+        height: 45px;
+        line-height: 1;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="position: fixed; width: 100%; z-index: 999">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 50px;
+        "
+      >
+        <div
+          style="
+            width: 100%;
+            position: relative;
+            height: 100%;
+            background-color: rgba(88, 88, 88, 0.336);
+          "
+        ></div>
+        <div
+          style="
+            font-weight: 600;
+            font-size: x-large;
+            position: absolute;
+            padding-left: 4%;
+          "
+        >
+          Product sorting at the airport
+        </div>
+        <div
+          class="buttons"
+          style="
+            position: absolute;
+            right: 0;
+            padding-right: 30px;
+            font-weight: 600;
+          "
+        >
+          <a href="/video_feed" style="text-decoration: none"
+            ><div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 13px;
+                font-weight: 700;
+                background-color: #00cfe8;
+                color: #fff;
+                padding: 8px 10px;
+                border-radius: 5px;
+              "
+            >
+              Demo
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      style="width: 100%; height: 100%; padding: 50px 0; background-color: #000"
+    >
+      <div class="" style="display: flex; align-items: center">
+        <div class="" style="position: relative">
+          <img
+            src="https://designindc.com/wp-content/uploads/2022/12/Machine-Learning.jpg"
+            style="width: 100%"
+            alt="AI"
+          />
+        </div>
+        <div
+          class=""
+          style="
+            position: absolute;
+            color: aliceblue;
+            left: 4%;
+            font-size: 100px;
+            width: 800px;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          Product sorting at the airport
+          <div style="display: flex; gap: 30px">
+            <a href="/video_feed" style="text-decoration: none; color: white"
+              ><div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 30px;
+                  font-weight: 500;
+                  background-color: #00cfe8;
+                  width: 150px;
+                  height: 50px;
+                  border-radius: 5px;
+                  margin-top: 10%;
+                "
+              >
+                Demo
+              </div> </a
+            ><a
+              href="/captured_images"
+              style="text-decoration: none; color: white"
+              ><div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 30px;
+                  font-weight: 500;
+                  background-color: #00cfe8;
+                  width: 150px;
+                  height: 50px;
+                  border-radius: 5px;
+                  margin-top: 10%;
+                "
+              >
+                Captured
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <h1>Project information</h1>
+        <p>
+          This project is a Django web application that involves real-time video
+          processing using a YOLO model for object detection. The application
+          includes features such as:
+        </p>
+        <ul style="margin-left: 7%; margin-right: 4%;">
+          <li style="font-size: 23px; margin-bottom: 10px">
+            <span style="font-weight: 700">Real-time Video Streaming:</span>
+            Capturing video from a camera and processing it using a YOLOv11 model
+            to detect objects.
+          </li>
+          <li style="font-size: 23px; margin-bottom: 10px">
+            <span style="font-weight: 700">Web Interface:</span> Displaying the
+            video stream on a webpage with an option to stop the stream.
+          </li>
+          <li style="font-size: 23px; margin-bottom: 10px">
+            <span style="font-weight: 700">Image Capture:</span> Capturing and
+            saving frames when certain conditions are met (e.g., object
+            detection confidence is above a threshold).
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h1>Confusion matrix</h1>
+        <p>
+          The confusion matrix is a summary table used to evaluate the
+          classification model by comparing the predicted results with the
+          actual outcomes. It provides insights into the model's performance,
+          helping to identify areas for improvement and ensuring accurate
+          product sorting at the airport.
+        </p>
+        <div class="grid">
+          <img
+            style="width: 100%"
+            src="{% static 'images/confusion_matrix_normalized.png' %}"
+            alt="Confusionnn matrix"
+          />
+          <img
+            style="width: 100%"
+            alt="Image description"
+            src="{% static 'images/confusion_matrix.png' %}"
+          />
+        </div>
+      </section>
+      <section>
+        <h1>Batch training</h1>
+        <p>
+          Batch training is a method of training a machine learning model where
+          data is divided into batches (small groups) before being fed into the
+          model to update the weights. This approach helps in efficiently
+          managing memory and computational resources, allowing for faster and
+          more stable training processes.
+        </p>
+        <div class="grid">
+          <img
+            style="width: 100%"
+            src="{% static 'images/train_batch0.jpg' %}"
+            alt="Train batch0"
+          />
+          <img
+            style="width: 100%"
+            alt="Train batch1"
+            src="{% static 'images/train_batch1.jpg' %}"
+          />
+          <img
+            style="width: 100%"
+            alt="Train batch2"
+            src="{% static 'images/train_batch2.jpg' %}"
+          />
+          <img
+            style="width: 100%"
+            alt="Val batch0 labels"
+            src="{% static 'images/val_batch0_labels.jpg' %}"
+          />
+          <img
+            style="width: 100%"
+            alt="Val batch0 pred"
+            src="{% static 'images/val_batch0_pred.jpg' %}"
+          />
+        </div>
+      </section>
+      <section>
+        <h1>Curve chart</h1>
+        <p>
+          A curve chart is a graphical representation that displays data points
+          connected by a continuous line, illustrating trends or changes over a
+          specific variable, such as time, quantity, or epochs. This type of
+          chart is particularly useful for visualizing the progression and
+          patterns in data, aiding in the analysis and interpretation of trends.
+        </p>
+        <div class="grid">
+          <img
+            style="width: 100%"
+            src="{% static 'images/F1_curve.png' %}"
+            alt="F1_curve"
+          />
+          <img
+            style="width: 100%"
+            alt="P_curve"
+            src="{% static 'images/P_curve.png' %}"
+          />
+          <img
+            style="width: 100%"
+            alt="PR_curve"
+            src="{% static 'images/PR_curve.png' %}"
+          />
+          <img
+            style="width: 100%"
+            alt="R_curve"
+            src="{% static 'images/R_curve.png' %}"
+          />
+        </div>
+      </section>
+      <section>
+        <h1>Labels</h1>
+        <p>
+          Labels help the model learn how to predict or classify data based on
+          the information associated with each data sample. They are essential
+          for training machine learning models, as they provide the ground truth
+          that the model uses to learn and make accurate predictions.
+        </p>
+        <div class="grid">
+          <img
+            style="width: 100%"
+            src="{% static 'images/labels_correlogram.jpg' %}"
+            alt="F1_curve"
+          />
+          <img
+            style="width: 100%"
+            alt="P_curve"
+            src="{% static 'images/labels.jpg' %}"
+          />
+        </div>
+      </section>
+      <section>
+        <h1>Performance index</h1>
+        <p>
+          The performance index refers to the results or predictions of a model,
+          which are compared with actual labels to assess its performance on
+          tasks like classification or regression. This index provides valuable
+          insights into the model's accuracy and effectiveness, helping to
+          identify areas for improvement and ensuring optimal performance in
+          product sorting at the airport.
+        </p>
+        <div class="grid">
+          <img
+            style="width: 100%"
+            src="{% static 'images/model_index_evaluations.png' %}"
+            alt="Model index evaluation"
+          />
+          <img
+            style="width: 100%"
+            src="{% static 'images/results.png' %}"
+            alt="result"
+          />
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p style="font-size: 13px; font-style: italic">
+        @2024 - by Nguyen Quoc Viet and Cao Van Nam
+      </p>
+    </footer>
+    <script>
+      window.addEventListener("beforeunload", function () {
+        navigator.sendBeacon("/stop_video_feed");
+      });
+
+      // Function to confirm before starting the Demo
+      function confirmDemoStart(event) {
+        const userConfirmed = confirm(
+          "Do you want to start the demo? If available, please ensure that your camera is turned on."
+        );
+        if (!userConfirmed) {
+          event.preventDefault();
+        }
+      }
+
+      // Add event listener to the Demo button
+      document.addEventListener("DOMContentLoaded", function () {
+        const demoLinks = document.querySelectorAll('a[href="/video_feed"]');
+        demoLinks.forEach((link) => {
+          link.addEventListener("click", confirmDemoStart);
+        });
+      });
+    </script>
+  </body>
+</html>

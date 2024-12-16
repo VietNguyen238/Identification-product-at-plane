@@ -1,0 +1,21 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "allow"
+    },
+    {
+      "id": 1,
+      "name": "ban"
+    },
+    {
+      "id": 2,
+      "name": "restrict"
+    }
+  ],
+  "info": {
+    "year": 2024,
+    "version": "1.0",
+    "contributor": "Label Studio"
+  }
+}
